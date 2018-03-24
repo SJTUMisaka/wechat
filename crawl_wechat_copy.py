@@ -25,21 +25,6 @@ js2 = 'window.scrollTo(0, document.body.scrollHeight)'
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
 
-def save_text(times,url):
-    driver = webdriver.PhantomJS(desired_capabilities=dcap)
-
-    driver.get(url)
-    resp = BeautifulSoup(driver.page_source, 'html5lib')
-    towrite1 = (resp.find('h2',id="activity-name").get_text())
-    towrite2 = (resp.find('em',id="post-date").get_text())
-    towrite3 = (resp.find('div',id="js_content").get_text())
-    towrite = towrite1 + "\n" + towrite2 + '\n' + towrite3
-
-    fh = open("text\\1\\"+str(times)+".txt",'w')
-    fh.write(towrite)
-    fh.close()
-
-    
 
 class crawl_wechat:
 
