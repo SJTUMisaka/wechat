@@ -1,9 +1,9 @@
 # wechat
 微信公众号爬虫
 ## 需求
-Windows环境
-python2 BeautifulSoup selenium
-Fiddler 
+Windows环境  
+python2 BeautifulSoup selenium  
+Fiddler  
 微信电脑客户端
 ## 步骤
 首先打开Fiddler，在微信上点开某公众号的历史纪录
